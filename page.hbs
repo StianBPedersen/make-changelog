@@ -1,9 +1,31 @@
 {{!< default}}
 {{> header }}
 
-{{#post}}
-	<h1>{{title}}</h1>
-	<p>{{{content}}}</p>
-{{/post}}
+
+<div class="l-changelog-wrapper">
+	<main class="l-changelog-main" role="main">
+		{{#post}}
+			<article class="changelog-article" role="article">
+				<time class="changelog-date" datetime="{{date format="YYYY--MM-DD"}}">
+					{{date format="dddd DD MMM YYYY"}}
+				</time>
+				<div class="changelog-content">
+					<h1 class="changelog-posttitle">{{title}}</h1>
+					<div class="changelog-postcontent">
+						{{{content}}}
+					</div>
+					{{#if tags}}
+					<div class="tags">
+						<div class="changelog-posttags">
+							Version: {{ tags separator=" | "}}
+						</div>
+					</div>
+					{{/if}}
+				</div>
+				
+			</article>
+		{{/post}}
+	</main>
+</div>
 
 {{> footer}}
