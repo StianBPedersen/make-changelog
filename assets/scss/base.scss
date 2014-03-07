@@ -3,31 +3,81 @@
 /***************************************************************************************************************************/
 
 @mixin clearfix {
-    zoom:1;
-    &:before, &:after {
-        content: "\0020"; 
-        display: block; 
-        height: 0; 
-        overflow: hidden; 
-    }
-    &:after {
-        clear: both;
-    }
+  zoom:1;
+  &:before, &:after {
+    content: "\0020"; 
+    display: block; 
+    height: 0; 
+    overflow: hidden; 
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin border-box($type) {
+  -webkit-box-sizing: $type;
+  -moz-box-sizing: $type;
+  -o-box-sizing: $type;
+  -ms-box-sizing: $type;
+  box-sizing: $type;
+}
+
+@mixin placeholder($color) {
+  ::-webkit-input-placeholder { color: $color };
+  ::-moz-input-placeholder { color: $color };
+  ::-o-input-placeholder { color: $color };
+  ::-ms-input-placeholder { color: $color };
+  ::input-placeholder { color: $color };
 }
 
 $background: #dce6e8;
+$makecolor: #57c6da;
 $secondary: #ccc;
 $white: #fff;
 $black: #111;
 $palegreen: #97b0b4;
+$grey: #f1f0ea;
 
 html { font-family: Lato, sans-serif;box-sizing: border-box;font-size: 16px; }
 body { background: $background;padding: 40px 0 0 0;margin: 0; }
+h1, h2, h3, h4, h5, h6 { font-weight: 300;}
 h1 { font-weight: 200;text-decoration:none;font-size: 3em;}
 article { width:100%;display:block;position:relative; }
-a { text-decoration:none;color:#95d4ed; }
-p { color: $black;line-height: 130%;font-family:garamond;font-size: 1em; }
-blockquote {
-    border-left: 4px solid $palegreen;
+a { text-decoration:none;color:$makecolor;text-decoration: underline; }
+p { color: $black;line-height: 140%;font-family: "Palatino Linotype", garamond;font-size: 1em; }
+input { width:100%;border-radius: 4px;border: 1px solid #d7d7d7;padding: 5px 10px;box-sizing: border-box;}
+
+
+::-moz-selection { color:$white; background: $makecolor; }
+::-o-selection { color:$white; background: $makecolor; }
+::-ms-selection { color:$white; background: $makecolor; }
+::selection { color: $white;background: $makecolor;}
+
+@include placeholder($makecolor);
+
+hr {
+    background: transparent;
+    border: 2px dashed $palegreen;
+}
+
+img { max-width: 100%; }
+
+blockquote { 
+    border-left: 4px solid $makecolor;
     padding-left: 10px;
+}
+
+pre {
+    margin: 1.6em 0;
+    @include border-box(border-box);
+    background: $grey;
+    border: 1px solid #dddbcc;
+    width: 100%;
+    padding: 10px;
+    font-family: Inconsolata,monospace;
+    font-size: 0.9em;
+    white-space: pre;
+    overflow: hidden;
+    border-radius: 3px;
 }

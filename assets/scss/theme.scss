@@ -27,7 +27,7 @@ h1 { margin-bottom: 0;}
 		font-size: 1.5em;
 		text-align:center;
 		font-weight:300;
-		background:#0081b0;
+		background: $makecolor;
 		margin-top: 10px;
 		border-radius: 4px 0 0 4px;
 		padding: 4px;
@@ -46,7 +46,7 @@ h1 { margin-bottom: 0;}
 }
 
 .changelog-posttitle { margin: 0 0 5px 0;font-weight:200;margin-left: 20px }
-.changelog-postcontent p { margin: 0 0 20px 0;font-size: 1.1em;}
+.changelog-postcontent p { margin: 0 0 20px 0;}
 
 .tags { 
 	width:100%;

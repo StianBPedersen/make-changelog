@@ -6,7 +6,7 @@
 	<main class="l-changelog-main" role="main">
 		{{#foreach posts}}
 			<article class="changelog-article" role="article">
-				<time class="changelog-date" datetime="{{date format="YYYY--MM-DD"}}">
+				<time class="changelog-date" data-tag="{{ tags }}" datetime="{{date format="YYYY--MM-DD"}}">
 					{{date format="dddd DD MMM YYYY"}}
 				</time>
 				<div class="changelog-content">
@@ -17,7 +17,7 @@
 					{{#if tags}}
 					<div class="tags">
 						<div class="changelog-posttags">
-							Version: {{ tags separator=" | "}}
+							Update @{{ tags separator=" | "}}
 						</div>
 					</div>
 					{{/if}}
