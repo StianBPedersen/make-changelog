@@ -76,6 +76,59 @@ h1 { margin-bottom: 0;}
 .l-changelog-footer p { color:$white; }
 .l-changelog-footer p, .l-changelog-footer a { font-size: 0.8em;}
 
+.makenewsmail {
+	background: #57c6da;
+	-webkit-animation: makenewsmail 1s ease-in-out 0 forwards;
+	-moz-animation: makenewsmail 1s ease-in-out 0 forwards;
+	-o-animation: makenewsmail 1s ease-in-out 0 forwards;
+	-ms-animation: makenewsmail 1s ease-in-out 0 forwards;
+	animation: makenewsmail 1s ease-in-out 0 forwards;
+}
+.julekalender {
+	background: #c20213;
+	-webkit-animation: julekalender 1s ease-in-out 0 forwards;
+	-moz-animation: julekalender 1s ease-in-out 0 forwards;
+	-o-animation: julekalender 1s ease-in-out 0 forwards;
+	-ms-animation: julekalender 1s ease-in-out 0 forwards;
+	animation: julekalender 1s ease-in-out 0 forwards;
+}
+.paskenotter {
+	background: #ffdc00;
+	-webkit-animation: paskenotter 1s ease-in-out 0 forwards;
+	-moz-animation: paskenotter 1s ease-in-out 0 forwards;
+	-o-animation: paskenotter 1s ease-in-out 0 forwards;
+	-ms-animation: paskenotter 1s ease-in-out 0 forwards;
+	animation: paskenotter 1s ease-in-out 0 forwards;
+}
+.makemobile {
+	background: #67a639;
+	-webkit-animation: makemobile 1s ease-in-out 0 forwards;
+	-moz-animation: makemobile 1s ease-in-out 0 forwards;
+	-o-animation: makemobile 1s ease-in-out 0 forwards;
+	-ms-animation: makemobile 1s ease-in-out 0 forwards;
+	animation: makemobile 1s ease-in-out 0 forwards;
+}
+
+
+@-webkit-keyframes makenewsmail {
+	0% { background: #000;}
+	100% { background: #57c6da;}
+}
+@-webkit-keyframes julekalender {
+	0% { background: #000;}
+	100% { background: #c20213;}
+}
+@-webkit-keyframes paskenotter {
+	0% { background: #000;}
+	100% { background: #ffdc00;}
+}
+@-webkit-keyframes makemobile {
+	0% { background: #000;}
+	100% { background: #67a639;}
+}
+
+
+
 /* RESPONSIVE */
 @media screen and (max-width: 768px) {
 	.changelog-article {

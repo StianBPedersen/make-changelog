@@ -5,16 +5,16 @@
 		$item = $(item);
 		switch( $item.data("tag").toLowerCase() ) {
 			case "makenewsmail":
-				$item.css('background', '#57c6da');
+				$item.addClass('makenewsmail');
 				break;
 			case "julekalender":
-				$item.css('background', '#c20213');
+				$item.addClass('julekalender');
 				break;
 			case "påskenøtter":
-				$item.css('background', '#ffdc00');
+				$item.addClass('paskenotter');
 				break;
 			case "makemobile":
-				$item.css('background', '#67a639');
+				$item.addClass('makemobile');
 				break;
 			default:
 				$item.css('background', '#000000');
