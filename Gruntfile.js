@@ -6,7 +6,10 @@ module.exports = function(grunt) {
 			compile: {
         files: {
           'assets/css/style.css': ['assets/scss/theme.scss']
-        }
+        },
+        options: {
+					style: 'compressed'
+        },
       }
 		},
 		clean: {

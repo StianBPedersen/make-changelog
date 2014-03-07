@@ -1,3 +1,33 @@
 /***************************************************************************************************************************/
 /********************************************************** BASE ***********************************************************/
 /***************************************************************************************************************************/
+
+@mixin clearfix {
+    zoom:1;
+    &:before, &:after {
+        content: "\0020"; 
+        display: block; 
+        height: 0; 
+        overflow: hidden; 
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+$background: #dce6e8;
+$secondary: #ccc;
+$white: #fff;
+$black: #111;
+$palegreen: #97b0b4;
+
+html { font-family: Lato, sans-serif;box-sizing: border-box;font-size: 16px; }
+body { background: $background;padding: 40px 0 0 0;margin: 0; }
+h1 { font-weight: 200;text-decoration:none;font-size: 3em;}
+article { width:100%;display:block;position:relative; }
+a { text-decoration:none;color:#95d4ed; }
+p { color: $black;line-height: 130%;font-family:garamond;font-size: 1em; }
+blockquote {
+    border-left: 4px solid $palegreen;
+    padding-left: 10px;
+}

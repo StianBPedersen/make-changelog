@@ -2,34 +2,36 @@
 {{> header }}
 
 
-<div class="l-wrapper-tp">
-	<main class="l-main-tp" role="main">
+<div class="l-changelog-wrapper">
+	<main class="l-changelog-main" role="main">
 		{{#foreach posts}}
-			<article class="article-tp	theme-margin" role="article">
-				<header class="postheader-tp">
-					<time class="date-tp" datetime="{{date format="YYYY--MM-DD"}}">
-						{{date format="dddd DD MMM YYYY"}}
-					</time>
-					<h1 class="posttitle-tp">
-						<a href="{{{url}}}" rel="bookmark">{{title}}</a>
-					</h1>
-					<div class="postcontent-tp">
-						{{{excerpt}}}
+			<article class="changelog-article" role="article">
+				<time class="changelog-date" datetime="{{date format="YYYY--MM-DD"}}">
+					{{date format="dddd DD MMM YYYY"}}
+				</time>
+				<div class="changelog-content">
+					<h1 class="changelog-posttitle">{{title}}</h1>
+					<div class="changelog-postcontent">
+						{{{content}}}
 					</div>
 					{{#if tags}}
-						<div class="posttags-tp">
-							tags: {{ tags separator=" | "}}
+					<div class="tags">
+						<div class="changelog-posttags">
+							Version: {{ tags separator=" | "}}
 						</div>
+					</div>
 					{{/if}}
-				</header>
+				</div>
+				
 			</article>
 		{{/foreach}}
-
+		
 		{{#if pagination }}
-			<div class="pagination-tp">
+			<div class="changelog-pagination">
 				{{{pagination}}}
 			</div>
 		{{/if}}
+		<br /><br />
 	</main>
 </div>
 

@@ -1,13 +1,12 @@
-<div class="l-header-tp theme-margin" role="banner">
+<div class="l-changelog-header theme-margin" role="banner">
 	{{#if @blog.logo}}
 		<a href="{{@blog.url}}" class="logo-tp"><img src="{{@blog.logo}}" alt="{{@blog.title}}"></a>
 	{{/if}}
 
-	<h1 class="blogtitle-tp">
-		<a href="{{@blog.url}}">{{@blog.title}}</a>
-	</h1>
-
-	<p class="blogdescription-tp">
-		<a href="{{@blog.url}}">{{@blog.description}}</a>
-	</p>
+	{{#if @blog.title}}
+	<h1 class="changelog-blogtitle">{{@blog.title}}</h1>
+	{{/if}}
+	{{#if @blog.description}}
+	<p class="changelog-blogdescription">&ndash;&nbsp;{{@blog.description}}</p>
+	{{/if}}
 </div>
