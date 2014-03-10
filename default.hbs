@@ -8,6 +8,12 @@
 	<title>{{meta_title}}</title>
 	<meta name="description" content="{{meta_description}}">
 
+	{{#post}}
+		<meta property="og:title" content="{{title}}"/>
+		<meta property="og:content" content="{{excerpt}}"/>
+		<meta property="og:image" content="{{@blog.logo}}" />
+	{{/post}}
+
 	{{! Styles }}
 	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,100italic,300italic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="/assets/css/style.css">
