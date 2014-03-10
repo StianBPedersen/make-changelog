@@ -11,7 +11,7 @@
 	{{#post}}
 		<meta property="og:title" content="{{title}}"/>
 		<meta property="og:content" content="{{excerpt}}"/>
-		<meta property="og:image" content="{{@blog.logo}}" />
+		<meta property="og:image" content="{{ @blog.url }}{{ @blog.logo}}" />
 		<meta property="og:type" content="blog" />
 		<meta property="og:site_name" content="Make Websolutions AS changelog"/>
 		<meta property="og:url" content="{{ url absolute="true" }}"/>
