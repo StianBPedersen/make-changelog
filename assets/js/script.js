@@ -17,7 +17,7 @@
 				$item.addClass('makemobile');
 				break;
 			default:
-				$item.css('background', '#000000');
+				$item.css('background', '#ccc');
 		}
 	});
 })(jQuery, window, undefined);
