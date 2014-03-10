@@ -8,14 +8,14 @@
 
 h1 { margin-bottom: 0;}
 
-.changelog-blogtitle { color:$black;font-weight:200;margin-top: 10px;padding: 0 10px; }
+.changelog-blogtitle { color:$black;margin-top: 10px;padding: 0 10px; }
 
 .changelog-blogdescription { 
 	padding: 0;
 	margin-top: 5px;
-	font-weight: normal;
 	color:$black; 
 	font-family: Lato, sans-serif;
+	font-weight: 200;
 }
 
 .changelog-article {
@@ -108,9 +108,15 @@ h1 { margin-bottom: 0;}
 			margin: 0 auto;
 			float:none;
 			display:block;
-			border-radius: none;
+			border-radius: 4px 4px 0 0;
 			background: none;
 			color:$black;
+
+			span {
+				border-radius: 0 0 0 0;
+			}
+
+		
 		}
 
 		.changelog-content {
