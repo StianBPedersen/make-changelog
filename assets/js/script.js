@@ -3,17 +3,17 @@
 
 	timeArr.each(function(index, item) {
 		$item = $(item);
-		switch( $item.data("tag").toLowerCase() ) {
-			case "makenewsmail":
+		switch( $item.data("tag") ) {
+			case "Make Newsmail":
 				$item.addClass('makenewsmail');
 				break;
-			case "advent-calendar":
+			case "Advent Calendar":
 				$item.addClass('advent-calendar');
 				break;
-			case "easter-quiz":
+			case "Easter Quiz":
 				$item.addClass('easter-quiz');
 				break;
-			case "makemobile":
+			case "Make Mobile":
 				$item.addClass('makemobile');
 				break;
 			default:
