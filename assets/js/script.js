@@ -16,6 +16,9 @@
 			case "Make Mobile":
 				$item.addClass('makemobile');
 				break;
+			case "Make AS":
+				$item.addClass('makeas');
+				break;
 			default:
 				$item.css('background', '#ccc');
 		}

@@ -10,8 +10,8 @@ $black: #111;
 $palegreen: #97b0b4;
 $grey: #f1f1f1;
 
-$product_colors: $makecolor, #c20213, #efce00, #67a639;
-$product_name: makenewsmail, advent-calendar, easter-quiz, makemobile;
+$product_colors: $makecolor, #c20213, #efce00, #67a639, #000000;
+$product_name: makenewsmail, advent-calendar, easter-quiz, makemobile, makeas;
 $products: zip($product_name, $product_colors);
 
 @mixin clearfix {
