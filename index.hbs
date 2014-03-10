@@ -7,7 +7,10 @@
 		{{#foreach posts}}
 			<article class="changelog-article" role="article">
 				<time class="changelog-date" data-tag="{{ tags }}" datetime="{{date format="YYYY--MM-DD"}}">
-					{{date format="dddd DD MMM YYYY"}}
+					{{date format="dddd DD MMM"}}
+					{{#if tags}}
+						<span>{{tags}}</span>
+					{{/if}}
 				</time>
 				<div class="changelog-content">
 					<h1 class="changelog-posttitle">{{title}}</h1>
@@ -17,7 +20,7 @@
 					{{#if tags}}
 					<div class="tags">
 						<div class="changelog-posttags">
-							Update @{{ tags separator=" | "}}
+							Update @{{ tags }}
 						</div>
 					</div>
 					{{/if}}

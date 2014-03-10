@@ -7,11 +7,11 @@
 			case "makenewsmail":
 				$item.addClass('makenewsmail');
 				break;
-			case "julekalender":
-				$item.addClass('julekalender');
+			case "advent-calendar":
+				$item.addClass('advent-calendar');
 				break;
-			case "påskenøtter":
-				$item.addClass('paskenotter');
+			case "easter-quiz":
+				$item.addClass('easter-quiz');
 				break;
 			case "makemobile":
 				$item.addClass('makemobile');
