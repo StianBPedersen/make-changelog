@@ -8,13 +8,14 @@
 
 h1 { margin-bottom: 0;}
 
-.changelog-blogtitle { color:$black;font-weight:100;margin-top: 10px;padding: 0 10px; }
+.changelog-blogtitle { color:$black;font-weight:200;margin-top: 10px;padding: 0 10px; }
 
 .changelog-blogdescription { 
 	padding: 0;
 	margin-top: 5px;
 	font-weight: normal;
 	color:$black; 
+	font-family: Lato, sans-serif;
 }
 
 .changelog-article {
@@ -36,6 +37,7 @@ h1 { margin-bottom: 0;}
 			font-size: 1.2em;
 			display:block;
 			padding: 5px 0;
+			text-shadow: 0 1px 0 rgba(0,0,0,.2)
 		}
 		
 		span {
