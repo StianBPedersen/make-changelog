@@ -43,19 +43,19 @@ $products: zip($product_name, $product_colors);
   ::input-placeholder { color: $color };
 }
 
-@function t($index) {
-  @return $index + 1 + s;
+@function increaseIndex($products, $product) {
+  @return 3 - index($products, $product) / 2 + s;
 }
 
 @mixin create-animation-classes {
   @each $product in $products {
     .#{nth($product,1)} {
-      background: nth($product,2);
-      -webkit-animation: nth($product,1) 1s ease-in-out 0 forwards;
-      -moz-animation: nth($product,1) 1s ease-in-out 0 forwards;
-      -o-animation: nth($product,1) 1s ease-in-out 0 forwards;
-      -ms-animation: nth($product,1) 1s ease-in-out 0 forwards;
-      animation: nth($product,1) 1s ease-in-out 0 forwards;
+      background: $secondary;
+      -webkit-animation: nth($product,1) 0.3s ease-in-out increaseIndex($products, $product) forwards;
+      -moz-animation: nth($product,1) 0.3s ease-in-out increaseIndex($products, $product) forwards;
+      -o-animation: nth($product,1) 0.3s ease-in-out increaseIndex($products, $product) forwards;
+      -ms-animation: nth($product,1) 0.3s ease-in-out increaseIndex($products, $product) forwards;
+      animation: nth($product,1) 0.3s ease-in-out increaseIndex($products, $product) forwards;
     }
   }
 } 
