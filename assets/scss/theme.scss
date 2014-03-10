@@ -24,18 +24,24 @@ h1 { margin-bottom: 0;}
 		width:20%;
 		float:left;
 		background:none;
-		color:$white;
-		font-size: 1.2em;
 		text-align:center;
 		font-weight:300;
+		font-size: 1.1em;
 		background: $makecolor;
 		margin-top: 10px;
 		border-radius: 4px 0 0 4px;
+
+		i {
+			color:$white;
+			font-size: 1.2em;
+			display:block;
+			padding: 5px 0;
+		}
 		
 		span {
 			width: 100%;
 			position:relative;
-			font-size: 0.7em;
+			font-size: 0.8em;
 			background:$grey;
 			color: #000;
 			display: block;
