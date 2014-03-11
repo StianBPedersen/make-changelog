@@ -13,7 +13,7 @@
 		<meta property="og:content" content="{{excerpt}}"/>
 		<meta property="og:image" content="{{ @blog.url }}{{ @blog.logo}}" />
 		<meta property="og:type" content="blog" />
-		<meta property="og:site_name" content="Make Websolutions AS changelog"/>
+		<meta property="og:site_name" content="{{@blog.title}}"/>
 		<meta property="og:url" content="{{ url absolute="true" }}"/>
 	{{/post}}
 
@@ -30,6 +30,6 @@
 	{{{body}}}
 
 	{{ghost_foot}}
-	<script src="/assets/js/script.js"></script>
+	<script src="/assets/js/script.min.js"></script>
 </body>
 </html>
