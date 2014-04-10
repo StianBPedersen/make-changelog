@@ -3,7 +3,8 @@
 
 	timeArr.each(function(index, item) {
 		$item = $(item);
-		switch( $item.data("tag") ) {
+		tag = $item.find('a')[0].innerText;
+		switch(tag) {
 			case "Make Newsmail":
 				$item.addClass('makenewsmail');
 				break;
