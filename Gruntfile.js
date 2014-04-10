@@ -52,5 +52,6 @@ module.exports = function(grunt) {
 
 	grunt.registerTask('default', ['clean', 'sass']);
 	grunt.registerTask('w', ['watch']);
+	grunt.registerTask('ugly', ['uglify']);
 
 };
